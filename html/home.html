@@ -22,23 +22,23 @@
     <div class="main-menu bg-dark-2 fixed-bottom">
        <div class="mobile--content mx-auto">
             <div class="d-flex justify-content-between align-items-center">
-                <a class="navigation active white-4 d-flex justify-content-center align-items-center flex-column" href="">
+                <a class="navigation active white-4 d-flex justify-content-center align-items-center flex-column" href="#">
                     <i class="bi bi-house"></i>
                     <span class="">Home</span>
                 </a>
-                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="">
+                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="users.html">
                     <i class="bi bi-people"></i>
                     <span class="">Users</span>
                 </a>
-                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="">
+                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="cheque.html">
                     <i class="bi bi-wallet2"></i>
                     <span class="">Cheques</span>
                 </a>
-                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="">
+                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="proformat.html">
                     <i class="bi bi-journal-check"></i>
                     <span class="">Proformat</span>
                 </a>
-                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="">
+                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="supplier.html">
                     <i class="bi bi-person"></i>
                     <span class="">Suppliers</span>
                 </a>
@@ -49,12 +49,12 @@
     <header class="bg-dark-2 fixed-top">
         <div class="mobile--content mx-auto">
             <div class="d-flex justify-content-between align-items-center">
-                <div class="logo">
+                <a class="logo" href="../index.html">
                     <span class="fs-20 prompt-semibold white-1">CAPAC</span>
-                </div>
-                <div class=" profile rounded-circle bg-blue overflow-hidden">
+                </a>
+                <a class=" profile rounded-circle bg-blue overflow-hidden" href="../html/profile.html">
                     <img src="../img/prodile.jpg" alt="" srcset="" class="img-fluid w-100 h-100">
-                </div>
+                </a>
             </div>
         </div>
     </header>
@@ -82,71 +82,81 @@
             <div class="w-90 mx-auto py-1">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <h6 class="fs-17 prompt-semibold">Recent Suppliers</h6>
-                    <a href="" class="blue">view more</a>
+                    <a href="./supplier.html" class="blue">view more</a>
                 </div>
     
-                <div class="supplier bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-3">JOCELYN</h5>
-                         <p class="mb-1">josadra16@yahoo.fr</p>
-                         <p>+509 4310 7477</p>
-                    </div>
-                    <div class="">
-                        <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center">
-                            <i class="bi bi-check-circle"></i>
-                            Valid
+                <div class="row">
+                    <div class="col">
+                        <div class="supplier bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-3">JOCELYN</h5>
+                                 <p class="mb-1">josadra16@yahoo.fr</p>
+                                 <p>+509 4310 7477</p>
+                            </div>
+                            <div class="">
+                                <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center">
+                                    <i class="bi bi-check-circle"></i>
+                                    Valid
+                                </div>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
                         </div>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
                     </div>
-                </div>
-                <div class="supplier bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-3">JOCELYN</h5>
-                         <p class="mb-1">josadra16@yahoo.fr</p>
-                         <p>+509 4310 7477</p>
-                    </div>
-                    <div class="">
-                        <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center">
-                            <i class="bi bi-check-circle"></i>
-                            Valid
+                    <div class="col">
+                        <div class="supplier bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-3">JOCELYN</h5>
+                                 <p class="mb-1">josadra16@yahoo.fr</p>
+                                 <p>+509 4310 7477</p>
+                            </div>
+                            <div class="">
+                                <div class=" bt-badge bg-red rounded-2 mb-4 text-center">
+                                    <i class="bi bi-x-circle"></i>
+                                    Invalid
+                                </div>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
                         </div>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
                     </div>
-                </div>
-                <div class="supplier bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-3">JOCELYN</h5>
-                         <p class="mb-1">josadra16@yahoo.fr</p>
-                         <p>+509 4310 7477</p>
-                    </div>
-                    <div class="">
-                        <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center">
-                            <i class="bi bi-check-circle"></i>
-                            Valid
+                    <div class="col">
+                        <div class="supplier bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-3">JOCELYN</h5>
+                                 <p class="mb-1">josadra16@yahoo.fr</p>
+                                 <p>+509 4310 7477</p>
+                            </div>
+                            <div class="">
+                                <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center">
+                                    <i class="bi bi-check-circle"></i>
+                                    Valid
+                                </div>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
                         </div>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
                     </div>
-                </div>
-                <div class="supplier bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-3">JOCELYN</h5>
-                         <p class="mb-1">josadra16@yahoo.fr</p>
-                         <p>+509 4310 7477</p>
-                    </div>
-                    <div class="">
-                        <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center">
-                            <i class="bi bi-check-circle"></i>
-                            Valid
+                    <div class="col">
+                        <div class="supplier bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-3">JOCELYN</h5>
+                                 <p class="mb-1">josadra16@yahoo.fr</p>
+                                 <p>+509 4310 7477</p>
+                            </div>
+                            <div class="">
+                                <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center">
+                                    <i class="bi bi-dash-circle"></i>
+                                    Pending
+                                </div>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
                         </div>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
                     </div>
                 </div>
             </div>
@@ -155,71 +165,80 @@
             <div class="w-90 mx-auto py-1">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <h6 class="fs-17 prompt-semibold">Recent Proformat</h6>
-                    <a href="" class="blue">view more</a>
+                    <a href="./proformat.html" class="blue">view more</a>
                 </div>
-                <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                        <p class="fs-14 mb-1">PR-001</p>
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
-                         <p>april 23th 2024</p>
-                    </div>
-                    <div class="">
-                        <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center">
-                            <i class="bi bi-check-circle"></i>
-                            Valid
+                <div class="row">
+                    <div class="col">
+                        <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                <p class="fs-14 mb-1">PR-001</p>
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
+                                 <p>april 23th 2024</p>
+                            </div>
+                            <div class="">
+                                <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center">
+                                    <i class="bi bi-dash-circle"></i>
+                                    Pending
+                                </div>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
                         </div>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
                     </div>
-                </div>
-    
-                <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                        <p class="fs-14 mb-1">PR-001</p>
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
-                         <p>april 23th 2024</p>
-                    </div>
-                    <div class="">
-                        <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center">
-                            <i class="bi bi-dash-circle"></i>
-                            Pending
+                    <div class="col">
+                        <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                <p class="fs-14 mb-1">PR-001</p>
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
+                                 <p>april 23th 2024</p>
+                            </div>
+                            <div class="">
+                                <div class=" bt-badge bg-red rounded-2 mb-4 text-center">
+                                    <i class="bi bi-x-circle"></i>
+                                    Invalid
+                                </div>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
                         </div>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
                     </div>
-                </div>
-                <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                        <p class="fs-14 mb-1">PR-001</p>
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
-                         <p>april 23th 2024</p>
-                    </div>
-                    <div class="">
-                        <div class=" bt-badge bg-red rounded-2 mb-4 text-center">
-                            <i class="bi bi-x-circle"></i>
-                            Invalid
+                    <div class="col">
+                        <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                <p class="fs-14 mb-1">PR-001</p>
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
+                                 <p>april 23th 2024</p>
+                            </div>
+                            <div class="">
+                                <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center">
+                                    <i class="bi bi-dash-circle"></i>
+                                    Pending
+                                </div>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
                         </div>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
                     </div>
-                </div>
-                <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                        <p class="fs-14 mb-1">PR-001</p>
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
-                         <p>april 23th 2024</p>
-                    </div>
-                    <div class="">
-                        <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center">
-                            <i class="bi bi-dash-circle"></i>
-                            Pending
+                    <div class="col">
+                        <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                <p class="fs-14 mb-1">PR-001</p>
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
+                                 <p>april 23th 2024</p>
+                            </div>
+                            <div class="">
+                                <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center">
+                                    <i class="bi bi-check-circle"></i>
+                                    Valid
+                                </div>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
                         </div>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
                     </div>
                 </div>
             </div>
@@ -228,58 +247,68 @@
             <div class="w-90 mx-auto py-1">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                     <h6 class="fs-17 prompt-semibold">Recent Cheque</h6>
-                    <a href="" class="blue">view more</a>
+                    <a href="./cheque.html" class="blue">view more</a>
                 </div>
-                <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                        <p class="fs-14 mb-1">PR-001</p>
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
-                         <p>april 23th 2024</p>
+                <div class="row">
+                    <div class="col">
+                        <div class="cheque bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                <p class="fs-14 mb-1">PR-001</p>
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
+                                 <p>april 23th 2024</p>
+                            </div>
+                            <div class=" text-end">
+                                <p >april 23 2024</p>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class=" text-end">
-                        <p >april 23 2024</p>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                    <div class="col">
+                        <div class="cheque bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                <p class="fs-14 mb-1">PR-001</p>
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
+                                 <p>april 23th 2024</p>
+                            </div>
+                            <div class=" text-end">
+                                <p >april 23 2024</p>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                        <p class="fs-14 mb-1">PR-001</p>
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
-                         <p>april 23th 2024</p>
+                    <div class="col">
+                        <div class="cheque bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                <p class="fs-14 mb-1">PR-001</p>
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
+                                 <p>april 23th 2024</p>
+                            </div>
+                            <div class=" text-end">
+                                <p >april 23 2024</p>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class=" text-end">
-                        <p >april 23 2024</p>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
-                    </div>
-                </div>
-                <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                        <p class="fs-14 mb-1">PR-001</p>
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
-                         <p>april 23th 2024</p>
-                    </div>
-                    <div class=" text-end">
-                        <p >april 23 2024</p>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
-                    </div>
-                </div>
-                <div class="proformat bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                    <div class="">
-                        <p class="fs-14 mb-1">PR-001</p>
-                         <h5 class="prompt-regular mb-0">Sadra</h5>
-                         <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
-                         <p>april 23th 2024</p>
-                    </div>
-                    <div class=" text-end">
-                        <p >april 23 2024</p>
-                        <p class="fs-12 mb-1 text-end">Amount</p>
-                        <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                    <div class="col">
+                        <div class="cheque bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <div class="">
+                                <p class="fs-14 mb-1">PR-001</p>
+                                 <h5 class="prompt-regular mb-0">Sadra</h5>
+                                 <h5 class="prompt-semibold fs-17 text-uppercase mb-2">JOCELYN</h5>
+                                 <p>april 23th 2024</p>
+                            </div>
+                            <div class=" text-end">
+                                <p >april 23 2024</p>
+                                <p class="fs-12 mb-1 text-end">Amount</p>
+                                <h4 class="fs-18 prompt-medium text-end">15,250.50 HTG</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
     
