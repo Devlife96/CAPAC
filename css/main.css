@@ -26,6 +26,7 @@ body{
     font-family: "urbanist", sans-serif !important;
     font-weight: 400;
     font-style: normal;
+    color: #020010 !important;
 }
 /* navigation */
 .main-menu{
@@ -95,14 +96,36 @@ div:last-of-type .section{
 }
 
 .profile-box{
-    border-radius: 2.5rem 2.5rem 0 0;
+    border-radius: 2.5rem;
     padding: 3rem 0 3rem 0 ;
 }
 .section-link{
-    padding: 1.5rem 0 1.5rem 0 ;
-    margin-bottom: 100px;
+    padding: 1rem 0 1rem 0 ;
+    margin-bottom: 60px;
 }
 .user-p{
     width: 100px;
     height: 100px;
 }
+/* table */
+
+
+/* .accorddion {
+    border: 4px solid #fff;
+    background: linear-gradient(to right, #f6f9fd, #ffffff);
+  }
+  .accord-item {
+    animation: testim-show 0.5s ease-in-out forwards;
+  } */
+  .accordion-item {
+    animation: testim-show 0.5s ease-in-out forwards;
+  }
+
+  .accordion--item {
+    animation: testim-show 0.5s ease-in-out forwards;
+  }
+  
+  .hide {
+    display: none;
+    animation: testim-out 0.5s ease-in-out forwards;
+  }
