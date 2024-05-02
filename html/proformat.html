@@ -19,34 +19,369 @@
 </head>
 <body>
 
-    <div class="main-menu bg-dark-2 fixed-bottom">
-       <div class="mobile--content mx-auto">
-            <div class="d-flex justify-content-between align-items-center">
-                <a class="navigation  white-4 d-flex justify-content-center align-items-center flex-column" href="home.html">
-                    <i class="bi bi-house"></i>
-                    <span class="">Home</span>
-                </a>
-                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="users.html">
-                    <i class="bi bi-people"></i>
-                    <span class="">Users</span>
-                </a>
-                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="cheque.html">
-                    <i class="bi bi-wallet2"></i>
-                    <span class="">Cheques</span>
-                </a>
-                <a class="navigation active white-4 d-flex justify-content-center align-items-center flex-column" href="#">
-                    <i class="bi bi-journal-check"></i>
-                    <span class="">Proformat</span>
-                </a>
-                <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="supplier.html">
-                    <i class="bi bi-person"></i>
-                    <span class="">Suppliers</span>
-                </a>
-            
+    <div class="main-body">
+        <div class="main-menu bg-dark-2  fixed-bottom">
+            <div class="logo bg-gray-2 w-100 middle-content mb-4">
+                <span class="prompt-semibold dark-1">CAPAC</span>
             </div>
-       </div>
+            <div class="mobile--content mx-auto">
+                 <div class="d-flex justify-content-between align-items-center">
+                     <a class="navigation   white-4 d-flex justify-content-center align-items-center flex-column" href="#">
+                         <i class="bi bi-house"></i>
+                         <span class="">Home</span>
+                     </a>
+                     <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="users.html">
+                         <i class="bi bi-people"></i>
+                         <span class="">Users</span>
+                     </a>
+                     <a class="navigation  white-4 d-flex justify-content-center align-items-center flex-column" href="cheque.html">
+                         <i class="bi bi-wallet2"></i>
+                         <span class="">Cheques</span>
+                     </a>
+                     <a class="navigation active white-4 d-flex justify-content-center align-items-center flex-column" href="#">
+                         <i class="bi bi-journal-check"></i>
+                         <span class="">Proformat</span>
+                     </a>
+                     <a class="navigation white-4 d-flex justify-content-center align-items-center flex-column" href="supplier.html">
+                         <i class="bi bi-person"></i>
+                         <span class="">Suppliers</span>
+                     </a>
+                 
+                 </div>
+            </div>
+          
+            <div class="web-profile d-flex  fixed-bottom gap-5">
+                <a href="profile.html">
+                    <div class="d-flex gap-1">
+                        <div class="web-pro-img rounded-circle overflow-hidden">
+                            <img src="../img/prodile.jpg" alt="" srcset="" class="w-100 h-100 img-fluid">
+                        </div>
+                        <div class="">
+                            <h4 class="fs-14 prompt-medium white-4 mb-0">Sindy Bayonne</h4>
+                            <p class="gray-3 fs-14">@bayonne96</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../index.html" class="web-logout">
+                    <i class="bi bi-box-arrow-right white-3 fs-18"></i>
+                </a>
+            </div>
+        </div>
+        <div class="main-content w-100">
+            <div class="web-header w-100 d-flex justify-content-between align-items-center">
+                <form action="" method="get" class="search d-flex justify-content-between align-items-center rounded-8 bg-gray-2 px-4 w-50">
+                    <input type="text" name="" id="" placeholder="search something..." class="px-2 bg-gray-2">
+                    <button type="button"><i class="bi bi-search fs-16 fw-bold"></i></button>
+                </form>
+                <div class="d-flex align-items-center justify-content-center gap-1">
+                    <a href="profile.html">
+                        <div class="web-pro-img rounded-circle overflow-hidden">
+                            <img src="../img/prodile.jpg" alt="" srcset="" class="w-100 h-100 img-fluid">
+                        </div>
+                    </a>
+                    
+                </div>
+
+            </div>
+            <div class="section mobile-search">
+                <div class="w-90 mx-auto py-5">
+                   <form action="" method="get" class="search d-flex justify-content-between align-items-center rounded-50 bg-gray-2 px-4">
+                    <input type="text" name="" id="" placeholder="search something..." class="px-2 bg-gray-2">
+                    <button type="button"><i class="bi bi-search fs-16 fw-bold"></i></button>
+                   </form>
+                </div>
+            </div>
+            <div class="section mb-3">
+                <div class="container-fluid py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h6 class="fs-17 prompt-semibold">All Proformats</h6>
+                    </div>
+                    <div class="row gx-2 gy-1">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <a href="proformat-details.html" class="web-details">
+                                <div class="accordion-content">
+                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                        <div class="">
+                                            <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
+                                            <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
+                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
+                                            <p class="gray-3">april 23th 2024</p>
+                                        </div>
+                                        <div class="">
+                                            <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center urbanist-medium darkGray-4">
+                                                <i class="bi bi-dash-circle"></i>
+                                                Pending
+                                            </div>
+                                            <p class="fs-12 mb-1 text-end gray-3">Amount</p>
+                                            <h4 class="fs-18 prompt-medium text-end darkGray-4">15,250.50 HTG</h4>
+                                        </div>
+                                    </div>
+        
+                                    <div class="accordion-item mb-5">
+                                        <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
+                                            <table class="table table-striped">
+                                                <thead class="thead-custom">
+                                                    <tr>
+                                                        <tr>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Product</th>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
+                                                        </tr>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+        
+                                            <div class="bg-gray-2 p-16 rounded-16 text-end">
+                                                <p class=" fs-14 gray-3 mb-1">Amount</p>
+                                                <h4 class="fs-22 darkGray-4 prompt-semibold">15 250 500.50 HTG</h4>                                        </h4>
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <a href="proformat-details.html" class="web-details">
+                                <div class="accordion-content">
+                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                        <div class="">
+                                            <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
+                                            <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
+                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
+                                            <p class="gray-3">april 23th 2024</p>
+                                        </div>
+                                        <div class="">
+                                            <div class=" bt-badge bg-red rounded-2 mb-4 text-center urbanist-medium darkGray-4">
+                                                <i class="bi bi-x-circle"></i>
+                                                Invalid
+                                            </div>
+                                            <p class="fs-12 mb-1 text-end gray-3">Amount</p>
+                                            <h4 class="fs-18 prompt-medium text-end darkGray-4">15,250.50 HTG</h4>
+                                        </div>
+                                    </div>
+        
+                                    <div class="accordion-item mb-5">
+                                        <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
+                                            <table class="table table-striped">
+                                                <thead class="thead-custom">
+                                                    <tr>
+                                                        <tr>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Product</th>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
+                                                        </tr>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+        
+                                            <div class="bg-gray-2 p-16 rounded-16 text-end">
+                                                <p class=" fs-14 gray-3 mb-1">Amount</p>
+                                                <h4 class="fs-22 darkGray-4 prompt-semibold">15 250 500.50 HTG</h4>                                        </h4>
+                                            </div>
+                                    </div>
+                                </div>
+                             </a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <a href="proformat-details.html" class="web-details">
+                                <div class="accordion-content">
+                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                        <div class="">
+                                            <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
+                                            <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
+                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
+                                            <p class="gray-3">april 23th 2024</p>
+                                        </div>
+                                        <div class="">
+                                            <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center urbanist-medium darkGray-4">
+                                                <i class="bi bi-dash-circle"></i>
+                                                Pending
+                                            </div>
+                                            <p class="fs-12 mb-1 text-end gray-3">Amount</p>
+                                            <h4 class="fs-18 prompt-medium text-end darkGray-4">15,250.50 HTG</h4>
+                                        </div>
+                                    </div>
+        
+                                    <div class="accordion-item mb-5">
+                                        <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
+                                            <table class="table table-striped">
+                                                <thead class="thead-custom">
+                                                    <tr>
+                                                        <tr>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Product</th>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
+                                                        </tr>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+        
+                                            <div class="bg-gray-2 p-16 rounded-16 text-end">
+                                                <p class=" fs-14 gray-3 mb-1">Amount</p>
+                                                <h4 class="fs-22 darkGray-4 prompt-semibold">15 250 500.50 HTG</h4>                                        </h4>
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <a href="proformat-details.html" class="web-details">
+                                <div class="accordion-content">
+                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                        <div class="">
+                                            <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
+                                            <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
+                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
+                                            <p class="gray-3">april 23th 2024</p>
+                                        </div>
+                                        <div class="">
+                                            <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center urbanist-medium darkGray-4">
+                                                <i class="bi bi-dash-circle"></i>
+                                                Pending
+                                            </div>
+                                            <p class="fs-12 mb-1 text-end gray-3">Amount</p>
+                                            <h4 class="fs-18 prompt-medium text-end darkGray-4">15,250.50 HTG</h4>
+                                        </div>
+                                    </div>
+        
+                                    <div class="accordion-item mb-5">
+                                        <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
+                                            <table class="table table-striped">
+                                                <thead class="thead-custom">
+                                                    <tr>
+                                                        <tr>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Product</th>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
+                                                        </tr>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="gray-3">meals</td>
+                                                        <td class="gray-3">200</td>
+                                                        <td class="gray-3">400</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+        
+                                            <div class="bg-gray-2 p-16 rounded-16 text-end">
+                                                <p class=" fs-14 gray-3 mb-1">Amount</p>
+                                                <h4 class="fs-22 darkGray-4 prompt-semibold">15 250 500.50 HTG</h4>                                        </h4>
+                                            </div>
+                                    </div>
+                                </div>
+                             </a>
+                        </div>
+                    </div>
+                    <div class="section"></div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-    <header class="bg-dark-2 fixed-top">
+
+    <header class="bg-dark-2 fixed-top mobile-header">
         <div class="mobile--content mx-auto">
             <div class="d-flex justify-content-between align-items-center">
                 <a class="logo" href="../index.html">
@@ -58,299 +393,6 @@
             </div>
         </div>
     </header>
-    <div class="section">
-        <div class="w-90 mx-auto py-5">
-           <form action="" method="get" class="search d-flex justify-content-between align-items-center rounded-50 bg-gray-2 px-4">
-            <input type="text" name="" id="" placeholder="search something..." class="px-2 bg-gray-2">
-            <button type="button"><i class="bi bi-search fs-16 fw-bold"></i></button>
-           </form>
-        </div>
-    </div>
-    <div>
-        <div class="section mb-3">
-            <div class="w-90 mx-auto py-1">
-                <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h6 class="fs-17 prompt-semibold">All Proformats</h6>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="accordion-content">
-                            <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                                <div class="">
-                                    <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
-                                     <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
-                                     <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
-                                     <p class="gray-3">april 23th 2024</p>
-                                </div>
-                                <div class="">
-                                    <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center urbanist-medium">
-                                        <i class="bi bi-dash-circle"></i>
-                                        Pending
-                                    </div>
-                                    <p class="fs-12 mb-1 text-end gray-3">Amount</p>
-                                    <h4 class="fs-18 prompt-medium text-end darkGray-4">15,250.50 HTG</h4>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item mb-5">
-                                <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
-                                    <table class="table table-striped">
-                                        <thead class="thead-custom">
-                                            <tr>
-                                                <tr>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Product</th>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
-                                                </tr>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    <div class="bg-gray-2 p-16 rounded-16 text-end">
-                                        <p class=" fs-14 gray-3 mb-1">Amount</p>
-                                        <h4 class="fs-22 darkGray-4 prompt-semibold">15 250 500.50 HTG</h4>                                        </h4>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="accordion-content">
-                            <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                                <div class="">
-                                    <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
-                                    <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
-                                    <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
-                                    <p class="gray-3">april 23th 2024</p>
-                                </div>
-                                <div class="">
-                                    <div class=" bt-badge bg-red rounded-2 mb-4 text-center urbanist-medium">
-                                        <i class="bi bi-x-circle"></i>
-                                        Invalid
-                                    </div>
-                                    <p class="fs-12 mb-1 text-end gray-3">Amount</p>
-                                    <h4 class="fs-18 prompt-medium text-end darkGray-4">15,250.50 HTG</h4>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item mb-5">
-                                <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
-                                    <table class="table table-striped">
-                                        <thead class="thead-custom">
-                                            <tr>
-                                                <tr>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Product</th>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
-                                                </tr>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    <div class="bg-gray-2 p-16 rounded-16 text-end">
-                                        <p class=" fs-14 gray-3 mb-1">Amount</p>
-                                        <h4 class="fs-22 darkGray-4 prompt-semibold">15 250 500.50 HTG</h4>                                        </h4>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="accordion-content">
-                            <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                                <div class="">
-                                    <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
-                                    <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
-                                    <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
-                                    <p class="gray-3">april 23th 2024</p>
-                                </div>
-                                <div class="">
-                                    <div class=" bt-badge bg-yellow-1 rounded-2 mb-4 text-center urbanist-medium">
-                                        <i class="bi bi-dash-circle"></i>
-                                        Pending
-                                    </div>
-                                    <p class="fs-12 mb-1 text-end gray-3">Amount</p>
-                                    <h4 class="fs-18 prompt-medium text-end darkGray-4">15,250.50 HTG</h4>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item mb-5">
-                                <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
-                                    <table class="table table-striped">
-                                        <thead class="thead-custom">
-                                            <tr>
-                                                <tr>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Product</th>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
-                                                </tr>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    <div class="bg-gray-2 p-16 rounded-16 text-end">
-                                        <p class=" fs-14 gray-3 mb-1">Amount</p>
-                                        <h4 class="fs-22 darkGray-4 prompt-semibold">15 250 500.50 HTG</h4>                                        </h4>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="accordion-content">
-                            <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
-                                <div class="">
-                                    <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
-                                    <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
-                                    <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
-                                    <p class="gray-3">april 23th 2024</p>
-                                </div>
-                                <div class="">
-                                    <div class=" bt-badge bg-light-green-3 rounded-2 mb-4 text-center urbanist-medium">
-                                        <i class="bi bi-check-circle"></i>
-                                        Valid
-                                    </div>
-                                    <p class="fs-12 mb-1 text-end gray-3">Amount</p>
-                                    <h4 class="fs-18 prompt-medium text-end darkGray-4">15,250.50 HTG</h4>
-                                </div>
-                            </div>
-
-                            <div class="accordion-item mb-5">
-                                <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
-                                    <table class="table table-striped">
-                                        <thead class="thead-custom">
-                                            <tr>
-                                                <tr>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Product</th>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
-                                                    <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
-                                                </tr>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="gray-3">meals</td>
-                                                <td class="gray-3">200</td>
-                                                <td class="gray-3">400</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-
-                                    <div class="bg-gray-2 p-16 rounded-16 text-end">
-                                        <p class=" fs-14 gray-3 mb-1">Amount</p>
-                                        <h4 class="fs-22 darkGray-4 prompt-semibold">15 250 500.50 HTG</h4>                                        </h4>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-    
-                <div class="section"></div>
-                
-            </div>
-        </div>
-       
-       
-    </div>
 
    
 
