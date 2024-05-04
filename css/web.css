@@ -1,4 +1,69 @@
-@media only screen and (min-width: 1024px) {
+/* Hide thing in mobile version */
+@media screen and (max-width:  575.98px) { 
+    .container-fluid{width: 50% !important;}
+    .main-menu .logo{display: none;}
+    .main-menu .web-profile{display: none !important;}
+    .main-content .web-header{display: none !important;}
+     .web-header + .section {
+        margin-top: 6rem !important;
+      }
+      
+      .main-content .web-data-user{display: none;}
+      .main-content .mobile-search{
+        margin-bottom: 1rem !important;
+      }
+      .main-content .profile-box{
+        width: 100% !important;
+      }
+      .main-content .profile-box .box-item{
+        padding:0 1rem 0 1rem !important;
+      }
+       .login-section .container-fluid{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .main-content .profile-box {
+        background: linear-gradient(to top, #FFFFFF, #F2F2F7) !important;
+      }
+      
+ }
+ @media only screen and  (max-width: 767.98px), only screen and  (max-width: 991.98px){
+    .container-fluid{width: 90% !important;}
+    .main-menu .logo{display: none;}
+    .main-menu .web-profile{display: none !important;}
+    .main-content .web-header{display: none !important;}
+     .web-header + .section {
+        margin-top: 6rem !important;
+      }
+      
+      .main-content .web-data-user{display: none;}
+      .main-content .mobile-search{
+        margin-bottom: 1rem !important;
+      }
+      .main-content .profile-box{
+        width: 100% !important;
+      }
+      .main-content .profile-box .box-item{
+        padding:0 1rem 0 1rem !important;
+      }
+       .login-section .container-fluid{
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .main-content .profile-box {
+        background: linear-gradient(to top, #FFFFFF, #F2F2F7) !important;
+      }
+    
+ }
+ 
+ /* @media only screen and  (min-width: 992px){
+    .container-fluid{width: 85% !important;}
+    
+ } */
+
+@media only screen and (min-width: 992px) {
     .mobile-header{display: none;}
 
     /* manage Web version */
@@ -81,6 +146,7 @@
     .main-content .web-header{
         height: 80px;
         border-bottom: 1.5px solid #F2F2F7;
+        margin-bottom: 2rem;
     }
     .main-content .web-header form {width: 400px;}
     .main-content .web-header .web-pro-img{
@@ -124,3 +190,5 @@
 
 
 }
+
+

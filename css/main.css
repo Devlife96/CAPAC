@@ -11,6 +11,9 @@
 a {
     text-decoration: none !important;
 }
+table tr td, table tr th{
+    background: none !important;
+}
 input{
     border: none !important;
     font-size: 1rem;
@@ -48,6 +51,20 @@ body{
     color: #48CEFF !important;
 }
 
+/* other link */
+.other-link{
+    transition: color .4s ease-in-out;
+}
+.other-link:hover{
+    color: #1eb0ff;
+}
+.other-link.active{
+    padding: 0.30rem 0.55rem;
+    border: 1px solid #48CEFF;
+    color: #48CEFF;
+    border-radius: 50px;
+}
+
 /* header */
 header{
     padding: 8px 0;
@@ -55,6 +72,7 @@ header{
 .logo{
     width: 60px;
     height: 30px;
+    border-bottom: 1px solid rgba(27, 22, 70, 70) ;
 }
 .profile{
     width: 30px;
@@ -99,10 +117,7 @@ div:last-of-type .section{
     border-radius: 2.5rem;
     padding: 3rem 0 3rem 0 ;
 }
-.section-link{
-    padding: 1rem 0 1rem 0 ;
-    margin-bottom: 60px;
-}
+
 .user-p{
     width: 100px;
     height: 100px;
@@ -113,13 +128,7 @@ table tbody tr td{
     font-size: 0.875rem;
 }
 
-/* .accorddion {
-    border: 4px solid #fff;
-    background: linear-gradient(to right, #f6f9fd, #ffffff);
-  }
-  .accord-item {
-    animation: testim-show 0.5s ease-in-out forwards;
-  } */
+
   .accordion-item {
     animation: testim-show 0.5s ease-in-out forwards;
   }
@@ -132,3 +141,152 @@ table tbody tr td{
     display: none;
     animation: testim-out 0.5s ease-in-out forwards;
   }
+
+:root {
+	--displacement: -0.1rem;
+	--tremble: -10deg;
+	--trembleF: 5deg;
+
+	--iPos: 50%;
+	--bPos: -75%;
+	--fPos: -50%;
+
+	--time: 430ms;
+}
+
+.switch {margin: auto; }
+
+.switch-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 2rem;
+    background: #D8D8DC;
+    border-radius: 99rem;
+    transform-origin: left center;
+    animation: checked__wrapper var(--time) ease-in forwards;
+}
+
+.switch-wrapper::before,
+.switch-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    transform-origin: inherit;
+    animation: inherit;
+    mix-blend-mode: inherit;
+}
+
+.switch-wrapper::before {
+    border-color:#fff;
+}
+
+.switch-wrapper::after {
+    border-color: none;
+}
+
+
+.switch-toggle {
+width: 1.5rem;
+height: 1.5rem;
+border-radius: 99rem;
+box-shadow: inset 0 0 0 2px #adadb5;
+transform-origin: inherit;
+animation: checked__toggle var(--time) ease-in forwards;
+}
+
+input:active + .switch-wrapper .switch-toggle {
+    width: 1.6rem;
+}
+
+input:checked +  .switch-wrapper {
+transform-origin: right center;
+animation-name: checked__wrapper--r;
+}
+
+input:checked + .switch-wrapper .switch-toggle {
+    background: #adadb5;
+    animation-name: checked__toggle--r;
+}
+
+@keyframes checked__wrapper {
+	0%,
+	45%,
+	100% {
+		transform: rotateY(0deg);
+	}
+	48% {
+		transform: translateX(var(--displacement));
+	}
+	55% {
+		transform: rotateZ(var(--displacement));
+	}
+
+	65% {
+		transform: rotateZ(var(--displacement));
+	}
+}
+
+@keyframes checked__wrapper--r {
+	0%,
+	45%,
+	100% {
+		transform: rotateY(0deg);
+	}
+	48% {
+		transform: translateX(calc(-1 * var(--displacement)));
+	}
+	55% {
+		transform: rotateZ(calc(-1 * var(--displacement)));
+	}
+
+	65% {
+		transform: rotateZ(calc(-1 * var(--displacement)));
+	}
+}
+
+@keyframes checked__toggle {
+	0% {
+		background: #D8D8DC;
+		transform: translateX(var(--iPos)) scale(1.25, 1);
+	}
+	45% {
+		background: #D8D8DC;
+		transform: translateX(var(--bPos)) scale(1, 1);
+	}
+	50% {
+		background: transparent;
+		transform: translateX(var(--bPos)) scale(0.5, 1.1);
+	}
+	65% {
+		transform: translateX(var(--bPos)) scale(1, 1);
+	}
+	100% {
+		transform: translateX(var(--fPos));
+	}
+}
+
+@keyframes checked__toggle--r {
+	0% {
+		background: transparent;
+		transform: translateX(calc(-1 * var(--iPos))) scale(1.25, 1);
+	}
+	45% {
+		background: transparent;
+		transform: translateX(calc(-1 * var(--bPos))) scale(1, 1);
+	}
+	50% {
+		background: #D8D8DC;
+		transform: translateX(calc(-1 * var(--bPos))) scale(0.5, 1.1);
+	}
+	65% {
+		transform: translateX(calc(-1 * var(--bPos))) scale(1, 1);
+	}
+	100% {
+		transform: translateX(calc(-1 * var(--fPos)));
+	}
+}
