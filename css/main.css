@@ -129,18 +129,45 @@ table tbody tr td{
 }
 
 
-  .accordion-item {
+  .accordion-item,.accordion--item {
     animation: testim-show 0.5s ease-in-out forwards;
   }
 
-  .accordion--item {
-    animation: testim-show 0.5s ease-in-out forwards;
+  ._menu-dropdown{
+    animation: drop-show 0.5s ease-in-out forwards;
   }
   
   .hide {
     display: none;
     animation: testim-out 0.5s ease-in-out forwards;
   }
+
+  ._menu-dropdown{
+    width: 12rem;
+    border-radius: 0 1rem 1rem 1rem;
+    margin-top: 0.6rem;
+  }
+  ._menu-dropdown ._menu-item {
+    cursor: pointer;
+  }
+  ._menu-dropdown ._menu-item .bi{
+    font-size: 20px;
+  }
+  ._menu-dropdown ._menu-item{
+    border-bottom: 0.05px solid #D8D8DC;
+  }
+  ._menu-dropdown ._menu-item span{
+    font-size: 1rem;
+}
+._menu-dropdown ._menu-item:last-child{
+    border-bottom: none;
+}
+
+
+
+/* .navigation.active{
+    color: #48CEFF !important;
+} */
 
 :root {
 	--displacement: -0.1rem;
@@ -213,80 +240,3 @@ input:checked + .switch-wrapper .switch-toggle {
     animation-name: checked__toggle--r;
 }
 
-@keyframes checked__wrapper {
-	0%,
-	45%,
-	100% {
-		transform: rotateY(0deg);
-	}
-	48% {
-		transform: translateX(var(--displacement));
-	}
-	55% {
-		transform: rotateZ(var(--displacement));
-	}
-
-	65% {
-		transform: rotateZ(var(--displacement));
-	}
-}
-
-@keyframes checked__wrapper--r {
-	0%,
-	45%,
-	100% {
-		transform: rotateY(0deg);
-	}
-	48% {
-		transform: translateX(calc(-1 * var(--displacement)));
-	}
-	55% {
-		transform: rotateZ(calc(-1 * var(--displacement)));
-	}
-
-	65% {
-		transform: rotateZ(calc(-1 * var(--displacement)));
-	}
-}
-
-@keyframes checked__toggle {
-	0% {
-		background: #D8D8DC;
-		transform: translateX(var(--iPos)) scale(1.25, 1);
-	}
-	45% {
-		background: #D8D8DC;
-		transform: translateX(var(--bPos)) scale(1, 1);
-	}
-	50% {
-		background: transparent;
-		transform: translateX(var(--bPos)) scale(0.5, 1.1);
-	}
-	65% {
-		transform: translateX(var(--bPos)) scale(1, 1);
-	}
-	100% {
-		transform: translateX(var(--fPos));
-	}
-}
-
-@keyframes checked__toggle--r {
-	0% {
-		background: transparent;
-		transform: translateX(calc(-1 * var(--iPos))) scale(1.25, 1);
-	}
-	45% {
-		background: transparent;
-		transform: translateX(calc(-1 * var(--bPos))) scale(1, 1);
-	}
-	50% {
-		background: #D8D8DC;
-		transform: translateX(calc(-1 * var(--bPos))) scale(0.5, 1.1);
-	}
-	65% {
-		transform: translateX(calc(-1 * var(--bPos))) scale(1, 1);
-	}
-	100% {
-		transform: translateX(calc(-1 * var(--fPos)));
-	}
-}

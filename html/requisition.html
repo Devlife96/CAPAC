@@ -70,12 +70,33 @@
             </div>
         </div>
         <div class="main-content w-100">
-            <header class="bg-dark-2 fixed-top mobile-header">
-                <div class="container-fluid mobile--content ">
+            <header class="bg-dark-2 fixed-top py-2 mobile-header">
+                <div class="container-fluid">
                     <div class="d-flex justify-content-between align-items-center">
-                        <a class="logo" href="../index.html">
-                            <span class="fs-20 prompt-semibold white-1">CAPAC</span>
-                        </a>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="_menu-container">
+                                 <div class="_menu">
+                                     <i class="bi bi-filter-left white-4 fs-28 "></i>
+                                 </div>
+                                 <div class="bg-gray-2 p-16 _menu-dropdown position-absolute  start-0 ">
+                                     <a class="_menu-item  gap-2 d-flex  align-items-center darkGray-4 px-2 py-2" href="requisition.html">
+                                         <i class="bi bi-bookmarks"></i> 
+                                         <span>Requisition</span>
+                                     </a>
+                                     <a class="_menu-item  gap-2 d-flex  align-items-center darkGray-4 px-2 py-2" href="receipt.html">
+                                         <i class="bi bi-receipt"></i>
+                                         <span>Receipts</span>
+                                     </a>
+                                     <a class="_menu-item  gap-2 d-flex  align-items-center darkGray-4 px-2 py-2" href="product.html">
+                                         <i class="bi bi-bag"></i>
+                                         <span>Products</span>
+                                     </a>
+                                 </div>
+                            </div>
+                             <a class="logo" href="home.html">
+                                 <span class="fs-20 prompt-semibold white-1">CAPAC</span>
+                             </a>
+                         </div>
                         <a class=" profile rounded-circle bg-blue overflow-hidden" href="../html/profile.html">
                             <img src="../img/prodile.jpg" alt="" srcset="" class="img-fluid w-100 h-100">
                         </a>
@@ -117,8 +138,8 @@
                     <div class="row ">
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <a href="requisition-details.html" class="web-details">
-                                <div class="accordion-content">
-                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                <div class="accordion-r-content">
+                                    <div class="requisition mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">REQ-001</p>
                                             <h5 class="mb-2 darkGray-4 fs-14">Project Name</h5>
@@ -135,46 +156,54 @@
                                         </div>
                                     </div>
         
-                                    <div class="accordion-item mb-5">
+                                    <div class="accordion-r-item mb-5">
                                         <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
-                                            <table class="table table-striped">
-                                                <thead class="thead-custom">
-                                                    <tr>
+                                            <div class="table-responsive-sm">
+                                                <table class="table table-striped ">
+                                                    <thead class="thead-custom">
                                                         <tr>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Product</th>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
+                                                            <tr>
+                                                                <th class="fs-18 urbanist-medium darkGray-4">ID</th>
+                                                                <th class="fs-18 urbanist-medium darkGray-4">Product</th>
+                                                                <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
+                                                                <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
+                                                            </tr>
                                                         </tr>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="gray-3">RECP-001</td>
+                                                            <td class="gray-3">meals</td>
+                                                            <td class="gray-3">200</td>
+                                                            <td class="gray-3">400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="gray-3">RECP-001</td>
+                                                            <td class="gray-3">meals</td>
+                                                            <td class="gray-3">200</td>
+                                                            <td class="gray-3">400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="gray-3">RECP-001</td>
+                                                            <td class="gray-3">meals</td>
+                                                            <td class="gray-3">200</td>
+                                                            <td class="gray-3">400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="gray-3">RECP-001</td>
+                                                            <td class="gray-3">meals</td>
+                                                            <td class="gray-3">200</td>
+                                                            <td class="gray-3">400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="gray-3">RECP-001</td>
+                                                            <td class="gray-3">meals</td>
+                                                            <td class="gray-3">200</td>
+                                                            <td class="gray-3">400</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
         
                                             <div class="bg-gray-2 p-16 rounded-16 text-end">
                                                 <p class=" fs-14 gray-3 mb-1">Amount</p>
@@ -186,8 +215,8 @@
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <a href="requisition-details.html" class="web-details">
-                                <div class="accordion-content">
-                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                <div class="accordion-r-content">
+                                    <div class="requisition mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">REQ-001</p>
                                             <h5 class="mb-2 darkGray-4 fs-14">Project Name</h5>
@@ -204,12 +233,13 @@
                                         </div>
                                     </div>
         
-                                    <div class="accordion-item mb-5">
+                                    <div class="accordion-r-item mb-5">
                                         <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
                                             <table class="table table-striped">
                                                 <thead class="thead-custom">
                                                     <tr>
                                                         <tr>
+                                                            <th class="fs-18 urbanist-medium darkGray-4">ID</th>
                                                             <th class="fs-18 urbanist-medium darkGray-4">Product</th>
                                                             <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
                                                             <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
@@ -218,26 +248,31 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td class="gray-3">RECP-001</td>
                                                         <td class="gray-3">meals</td>
                                                         <td class="gray-3">200</td>
                                                         <td class="gray-3">400</td>
                                                     </tr>
                                                     <tr>
+                                                        <td class="gray-3">RECP-001</td>
                                                         <td class="gray-3">meals</td>
                                                         <td class="gray-3">200</td>
                                                         <td class="gray-3">400</td>
                                                     </tr>
                                                     <tr>
+                                                        <td class="gray-3">RECP-001</td>
                                                         <td class="gray-3">meals</td>
                                                         <td class="gray-3">200</td>
                                                         <td class="gray-3">400</td>
                                                     </tr>
                                                     <tr>
+                                                        <td class="gray-3">RECP-001</td>
                                                         <td class="gray-3">meals</td>
                                                         <td class="gray-3">200</td>
                                                         <td class="gray-3">400</td>
                                                     </tr>
                                                     <tr>
+                                                        <td class="gray-3">RECP-001</td>
                                                         <td class="gray-3">meals</td>
                                                         <td class="gray-3">200</td>
                                                         <td class="gray-3">400</td>
@@ -255,8 +290,8 @@
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <a href="requisition-details.html" class="web-details">
-                                <div class="accordion-content">
-                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                <div class="accordion-r-content">
+                                    <div class="requisition mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">REQ-001</p>
                                             <h5 class="mb-2 darkGray-4 fs-14">Project Name</h5>
@@ -273,46 +308,52 @@
                                         </div>
                                     </div>
         
-                                    <div class="accordion-item mb-5">
+                                    <div class="accordion-r-item mb-5">
                                         <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
-                                            <table class="table table-striped">
-                                                <thead class="thead-custom">
+                                        <table class="table table-striped">
+                                            <thead class="thead-custom">
+                                                <tr>
                                                     <tr>
-                                                        <tr>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Product</th>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
-                                                        </tr>
+                                                        <th class="fs-18 urbanist-medium darkGray-4">ID</th>
+                                                        <th class="fs-18 urbanist-medium darkGray-4">Product</th>
+                                                        <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
+                                                        <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
                                                     </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
         
                                             <div class="bg-gray-2 p-16 rounded-16 text-end">
                                                 <p class=" fs-14 gray-3 mb-1">Amount</p>
@@ -324,8 +365,8 @@
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <a href="requisition-details.html" class="web-details">
-                                <div class="accordion-content">
-                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                <div class="accordion-r-content">
+                                    <div class="requisition mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">REQ-001</p>
                                             <h5 class="mb-2 darkGray-4 fs-14">Project Name</h5>
@@ -342,46 +383,52 @@
                                         </div>
                                     </div>
         
-                                    <div class="accordion-item mb-5">
+                                    <div class="accordion-r-item mb-5">
                                         <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
-                                            <table class="table table-striped">
-                                                <thead class="thead-custom">
+                                        <table class="table table-striped">
+                                            <thead class="thead-custom">
+                                                <tr>
                                                     <tr>
-                                                        <tr>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Product</th>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
-                                                            <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
-                                                        </tr>
+                                                        <th class="fs-18 urbanist-medium darkGray-4">ID</th>
+                                                        <th class="fs-18 urbanist-medium darkGray-4">Product</th>
+                                                        <th class="fs-18 urbanist-medium darkGray-4">Quantity</th>
+                                                        <th class="fs-18 urbanist-medium darkGray-4">Unit Price</th>
                                                     </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="gray-3">meals</td>
-                                                        <td class="gray-3">200</td>
-                                                        <td class="gray-3">400</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="gray-3">RECP-001</td>
+                                                    <td class="gray-3">meals</td>
+                                                    <td class="gray-3">200</td>
+                                                    <td class="gray-3">400</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
         
                                             <div class="bg-gray-2 p-16 rounded-16 text-end">
                                                 <p class=" fs-14 gray-3 mb-1">Amount</p>

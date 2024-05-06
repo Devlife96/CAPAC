@@ -70,12 +70,33 @@
             </div>
         </div>
         <div class="main-content w-100">
-            <header class="bg-dark-2 fixed-top mobile-header">
-                <div class="container-fluid mobile--content ">
+            <header class="bg-dark-2 fixed-top py-2 mobile-header">
+                <div class="container-fluid">
                     <div class="d-flex justify-content-between align-items-center">
-                        <a class="logo" href="../index.html">
-                            <span class="fs-20 prompt-semibold white-1">CAPAC</span>
-                        </a>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="_menu-container">
+                                 <div class="_menu">
+                                     <i class="bi bi-filter-left white-4 fs-28 "></i>
+                                 </div>
+                                 <div class="bg-gray-2 p-16 _menu-dropdown position-absolute  start-0 ">
+                                     <a class="_menu-item  gap-2 d-flex  align-items-center darkGray-4 px-2 py-2" href="requisition.html">
+                                         <i class="bi bi-bookmarks"></i> 
+                                         <span>Requisition</span>
+                                     </a>
+                                     <a class="_menu-item  gap-2 d-flex  align-items-center darkGray-4 px-2 py-2" href="receipt.html">
+                                         <i class="bi bi-receipt"></i>
+                                         <span>Receipts</span>
+                                     </a>
+                                     <a class="_menu-item  gap-2 d-flex  align-items-center darkGray-4 px-2 py-2" href="product.html">
+                                         <i class="bi bi-bag"></i>
+                                         <span>Products</span>
+                                     </a>
+                                 </div>
+                            </div>
+                             <a class="logo" href="home.html">
+                                 <span class="fs-20 prompt-semibold white-1">CAPAC</span>
+                             </a>
+                         </div>
                         <a class=" profile rounded-circle bg-blue overflow-hidden" href="../html/profile.html">
                             <img src="../img/prodile.jpg" alt="" srcset="" class="img-fluid w-100 h-100">
                         </a>
@@ -117,8 +138,8 @@
                     <div class="row ">
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <a href="receipt-details.html" class="web-details">
-                                <div class="accordion-content">
-                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                <div class="accordion-rep-content">
+                                    <div class="receipt mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
                                             <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
@@ -135,7 +156,7 @@
                                         </div>
                                     </div>
         
-                                    <div class="accordion-item mb-5">
+                                    <div class="accordion-rep-item mb-5">
                                         <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
                                             <table class="table table-striped">
                                                 <thead class="thead-custom">
@@ -186,8 +207,8 @@
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <a href="receipt-details.html" class="web-details">
-                                <div class="accordion-content">
-                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                <div class="accordion-rep-content">
+                                    <div class="receipt mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
                                             <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
@@ -204,7 +225,7 @@
                                         </div>
                                     </div>
         
-                                    <div class="accordion-item mb-5">
+                                    <div class="accordion-rep-item mb-5">
                                         <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
                                             <table class="table table-striped">
                                                 <thead class="thead-custom">
@@ -255,8 +276,8 @@
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <a href="receipt-details.html" class="web-details">
-                                <div class="accordion-content">
-                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                                <div class="accordion-rep-content">
+                                    <div class="receipt mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
                                             <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
@@ -273,7 +294,7 @@
                                         </div>
                                     </div>
         
-                                    <div class="accordion-item mb-5">
+                                    <div class="accordion-rep-item mb-5">
                                         <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
                                             <table class="table table-striped">
                                                 <thead class="thead-custom">
@@ -323,9 +344,9 @@
                             </a>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
-                            <a href="proformat-details.html" class="web-details">
-                                <div class="accordion-content">
-                                    <div class="proformat mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
+                            <a href="receipt-details.html" class="web-details">
+                                <div class="accordion-rep-content">
+                                    <div class="receipt mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
                                             <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
@@ -342,7 +363,7 @@
                                         </div>
                                     </div>
         
-                                    <div class="accordion-item mb-5">
+                                    <div class="accordion-rep-item mb-5">
                                         <h4 class="fs-20 darkGray-4 mb-2 urbanist-semibold">Product List</h4>
                                             <table class="table table-striped">
                                                 <thead class="thead-custom">

@@ -1,9 +1,16 @@
 "strict";
 const accordion = document.querySelectorAll(".accordion-content");
 const _supplier = document.querySelectorAll(".accordion--content");
-
+const _requisition = document.querySelectorAll('.accordion-r-content');
+const _receipt = document.querySelectorAll('.accordion-rep-content');
+// Proformat
 playAction(accordion, ".proformat", ".accordion-item");
+// Supplier
 playAction(_supplier, ".supplier", ".accordion--item");
+// Requisition
+playAction(_requisition, ".requisition", ".accordion-r-item");
+// Receipt
+playAction(_receipt,".receipt", ".accordion-rep-item");
 
 //make it flexible
 
