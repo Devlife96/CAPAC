@@ -26,6 +26,10 @@
       .main-content .profile-box {
         background: linear-gradient(to top, #FFFFFF, #F2F2F7) !important;
       }
+      .main-content .display-search{
+        width: 100% !important;
+    }
+   
       
  }
  @media only screen and  (max-width: 767.98px), only screen and  (max-width: 991.98px){
@@ -184,6 +188,9 @@
         width: 200px;
         height: 0.5px;
         background: #F2F2F7;
+    }
+    .main-content .display-search{
+        width: 75%;
     }
    
     

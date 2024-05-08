@@ -17,11 +17,14 @@ table tr td, table tr th{
 input{
     border: none !important;
     font-size: 1rem;
+    color: #6C6C70;
 }
 input:focus{
     border: none !important;
     box-shadow: none !important;
+    outline: none !important;
 }
+
 
 button{
     border: none !important;
@@ -141,6 +144,10 @@ table tbody tr td{
     display: none;
     animation: testim-out 0.5s ease-in-out forwards;
   }
+  .proformat,.supplier,.cheque,.requisition,.receipt
+  {display: block !important;}
+  .proformat.hide,.supplier.hide,.cheque.hide,.requisition.hide, .receipt.hide
+  {display: none !important;}
 
   ._menu-dropdown{
     width: 12rem;
@@ -163,6 +170,16 @@ table tbody tr td{
     border-bottom: none;
 }
 
+
+/* Table Filter */
+.result tr[visible=false],
+.no-result {
+  display: none;
+}
+
+.result tr[visible=true] {
+  display: table-row;
+}
 
 
 /* .navigation.active{

@@ -104,9 +104,9 @@
                 </div>
             </header>
             <div class="web-header w-100 d-flex justify-content-between align-items-center">
-                <form action="" method="get" class="search d-flex justify-content-between align-items-center rounded-8 bg-gray-2 px-4 w-50">
-                    <input type="text" name="" id="" placeholder="search something..." class="px-2 bg-gray-2">
-                    <button type="button"><i class="bi bi-search fs-16 fw-bold"></i></button>
+                <form action="" method="get" class="search d-flex justify-content-between align-items-center rounded-8 bg-gray-2 px-4 w-50 gap-2">
+                    <input type="text" name="" id="" placeholder="search something..." class="px-2 bg-gray-2 filter-box">
+                    <div type="button" class="_send"><i class="bi bi-search fs-16 fw-bold icon"></i></div>
                 </form>
                 <div class="d-flex align-items-center justify-content-center gap-4">
                     <a href="requisition.html" class="gray-3 urbanist-medium other-link "><i class="bi bi-bookmarks"></i> <span class="mx-1">Requisition</span></a>
@@ -125,8 +125,8 @@
             <div class="section mobile-search">
                 <div class="container-fluid">
                    <form action="" method="get" class="search d-flex justify-content-between align-items-center rounded-50 bg-gray-2 px-4">
-                    <input type="text" name="" id="" placeholder="search something..." class="px-2 bg-gray-2">
-                    <button type="button"><i class="bi bi-search fs-16 fw-bold"></i></button>
+                    <input type="text" name="" id="" placeholder="search something..." class="px-2 bg-gray-2 filter-box">
+                    <div type="button" class="_send"><i class="bi bi-search fs-16 fw-bold"></i></div>
                    </form>
                 </div>
             </div>
@@ -135,15 +135,15 @@
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h6 class="fs-17 prompt-semibold">All Receipts</h6>
                     </div>
-                    <div class="row ">
+                    <div class="row receipt-container">
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <a href="receipt-details.html" class="web-details">
                                 <div class="accordion-rep-content">
                                     <div class="receipt mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
-                                            <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
-                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
+                                            <h5 class="prompt-regular mb-0 darkGray-4 rc-fname">Sadra</h5>
+                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4 rc-lname">JOCELYN</h5>
                                             <p class="gray-3">april 23th 2024</p>
                                         </div>
                                         <div class="">
@@ -211,8 +211,8 @@
                                     <div class="receipt mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
-                                            <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
-                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
+                                            <h5 class="prompt-regular mb-0 darkGray-4 rc-fname">Julie</h5>
+                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4 rc-lname">Zephir</h5>
                                             <p class="gray-3">april 23th 2024</p>
                                         </div>
                                         <div class="">
@@ -280,8 +280,8 @@
                                     <div class="receipt mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
-                                            <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
-                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
+                                            <h5 class="prompt-regular mb-0 darkGray-4 rc-fname">Hans </h5>
+                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4 rc-lname">Fortin</h5>
                                             <p class="gray-3">april 23th 2024</p>
                                         </div>
                                         <div class="">
@@ -349,8 +349,8 @@
                                     <div class="receipt mb-4 bg-gray-2 p-16 d-flex justify-content-between rounded-16 mb-2">
                                         <div class="">
                                             <p class="fs-14 mb-1 gray-3 urbanist-medium">PR-001</p>
-                                            <h5 class="prompt-regular mb-0 darkGray-4">Sadra</h5>
-                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4">JOCELYN</h5>
+                                            <h5 class="prompt-regular mb-0 darkGray-4 rc-fname">Sadra</h5>
+                                            <h5 class="prompt-medium fs-18 text-uppercase mb-2 darkGray-4 rc-lname">JOCELYN</h5>
                                             <p class="gray-3">april 23th 2024</p>
                                         </div>
                                         <div class="">
@@ -412,6 +412,7 @@
                                 </div>
                              </a>
                         </div>
+                        <div class="display-search rounded-16 p-2"></div>
                     </div>
                     
                 </div>
@@ -427,6 +428,7 @@
     <!--Include Custom JS  -->
     <script src="../js/accordion.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/jquery.js"></script>
     
     <!-- Include JS BootStrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
