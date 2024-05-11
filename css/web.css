@@ -29,8 +29,9 @@
       .main-content .display-search{
         width: 100% !important;
     }
-   
-      
+    .main-content thead tr th{
+        font-size: 14px !important;
+    }      
  }
  @media only screen and  (max-width: 767.98px), only screen and  (max-width: 991.98px){
     .container-fluid{width: 90% !important;}
@@ -144,7 +145,8 @@
     }
 
     .main-body .main-content .form-login{
-        width: 70%;
+        width: 30%;
+        margin: auto;
     }
 
     .main-content .web-header{
